@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// ⚙️ Configuración especial para GitHub Pages
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/proyecto-GDI2/', // 👈 el nombre del repositorio, con la barra al inicio y final
+  base: "/", // 👈 Asegura que las rutas sean absolutas (importante para Netlify)
 });
